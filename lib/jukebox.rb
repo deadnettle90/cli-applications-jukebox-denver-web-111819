@@ -33,8 +33,12 @@ def play
 end
 
 def list(songs)
+  i = 0
   songs.each_with_index do |item, index|
-    songs[item] = index+1
+    songs[item] = index
+    while i < songs.length do
+      puts 
+    end
   end
 end
 
