@@ -61,8 +61,9 @@ def run
     help
   elsif user_input == "exit"
     exit_jukebox
+  else
+    break
   end
-  break
 end
 
 
