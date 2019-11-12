@@ -31,12 +31,14 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   user_response = gets.strip
-  invalid = false
+  valid = false
   songs.each_with_index do |song, index|
     if (user_response.to_i - 1 == index)
     puts "Playing #{songs[index]}"
+    valid = true
   elsif (user_response == song)
     puts "Playing #{user_response}"
+    valid = true
   else
     puts "Invalid input, please try again."
   end
