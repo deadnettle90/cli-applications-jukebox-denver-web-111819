@@ -43,7 +43,7 @@ def play(songs)
   else
     puts "Invalid input, please try again." if valid == false
   end
-end
+  end
 end
 
 
