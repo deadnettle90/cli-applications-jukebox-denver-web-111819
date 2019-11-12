@@ -35,6 +35,7 @@ end
 def list(songs)
   songs.map do |k, v|
     v.
+    puts songs.join("\n")
   end
 end
 
