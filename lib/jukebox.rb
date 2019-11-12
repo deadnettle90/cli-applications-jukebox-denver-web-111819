@@ -50,18 +50,18 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-def run
+def run(input)
   help
   loop do
   puts "Please enter a command:"
   user_input = gets.chomp
   case user_input
   when "list"
-    list
+    list(input)
   when "play"
-    play
+    play(input)
   when "help"
-    help
+    help(input)
   when "exit"
     exit_jukebox
     break
