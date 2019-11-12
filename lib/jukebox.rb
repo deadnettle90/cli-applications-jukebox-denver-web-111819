@@ -61,7 +61,7 @@ def run(input)
   when "play"
     play(input)
   when "help"
-    help(input)
+    help
   when "exit"
     exit_jukebox
     break
