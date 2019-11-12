@@ -33,8 +33,8 @@ def play(songs)
   user_response = gets.strip
 
   songs.each_with_index do |song, index|
-    if (user_response.to_i - 1 = 
-    puts "Playing #{songs[user_response.to_i - 1]}"
+    if (user_response.to_i - 1 = index)
+    puts "Playing #{songs[index]}"
   elsif songs.include?(user_response)
     puts "Playing #{user_response}"
   else
