@@ -32,7 +32,7 @@ def play(songs)
   puts "Please enter a song name or number:"
   user_response = gets.strip
   if user_response_to_i == i
-    puts "Playing #{song[i}"
+    puts "Playing #{song[i-1]}"
   else 
     puts "Invalid input, please try again."
   end
