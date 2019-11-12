@@ -54,13 +54,13 @@ def run
   puts "Please enter a command:"
   user_input = gets.strip
   case user_input
-  if user_input == "list"
+  when "list"
     list
-  elsif user_input == "play"
+  when "play"
     play
-  elsif user_input == "help"
+  when "help"
     help
-  elsif user_input == "exit"
+  when "exit"
     exit_jukebox
   else
     break run
