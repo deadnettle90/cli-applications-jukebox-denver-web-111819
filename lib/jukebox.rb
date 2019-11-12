@@ -33,7 +33,9 @@ def play
 end
 
 def list(songs)
-  
+  songs.map do |k, v|
+    v.
+  end
 end
 
 def exit_jukebox
