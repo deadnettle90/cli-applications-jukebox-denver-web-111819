@@ -35,7 +35,7 @@ end
 def list(songs)
   songs.map do |value|
     value.list 
-    puts "#{index + 1}: "value.join("\n")
+    puts value.join("\n")
   end
 end
 
