@@ -47,6 +47,21 @@ def play(songs)
 end
 
 
+def play(songs)
+  puts "Pick a song that you'll like to hear."
+  answer = gets.chomp
+  if songs.include? answer
+    puts "Playing #{answer}"
+  elsif (0...songs.length).include? answer.to_i-1
+    puts "Playing #{songs[answer.to_i-1]}"
+  else
+    puts "Invalid input, please try again"
+  end
+end
+
+
+
+
 def list(songs)
   songs.each_with_index do |val, index|
     puts "#{index+1}. #{val}"
