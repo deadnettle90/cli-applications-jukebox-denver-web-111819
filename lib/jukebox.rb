@@ -48,7 +48,7 @@ end
 
 
 def play(songs)
-  puts "Pick a song that you'll like to hear."
+  puts "Please enter a song name or number:"
   answer = gets.chomp
   if songs.include? answer
     puts "Playing #{answer}"
