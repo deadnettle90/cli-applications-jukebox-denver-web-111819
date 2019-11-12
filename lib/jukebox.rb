@@ -41,8 +41,7 @@ def play(songs)
     puts "Playing #{user_response}"
     valid = true
   else
-    valid == false
-    puts "Invalid input, please try again."
+    puts "Invalid input, please try again." if valid == false
   end
   end
 end
