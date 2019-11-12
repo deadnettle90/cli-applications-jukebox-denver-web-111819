@@ -33,9 +33,9 @@ def play
 end
 
 def list(songs)
-  songs.map do |k, v|
-    v.
-    puts songs.join("\n")
+  songs.map do |value|
+    value.list 
+    puts "#{index + 1}: "value.join("\n")
   end
 end
 
