@@ -53,7 +53,7 @@ end
 def run
   loop do
   puts "Please enter a command:"
-  user_input = gets.strip
+  user_input = gets.chomp
   case user_input
   when "list"
     list
