@@ -33,7 +33,7 @@ def play
 end
 
 def list(songs)
-  songs.map do |value|
+  songs.each_with_index do |value|
     value.list 
     puts value.join("\n")
   end
